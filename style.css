@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Serif+Pro&display=swap');
+h1{
+    font-family: 'Source Serif Pro', serif;
+}
+@media  (max-width: 768px){
+ #flex{
+    display: flex; 
+    justify-content:space-around;
+ }
+}
+.flux{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content:space-evenly;
+}
+.cards{
+    margin: 10em auto;
+    /* width: calc(100%/3); */
+}
+.special{
+    font-family: 'Cabin Sketch', cursive;
+}
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    overflow: hidden;
+}
+.scroll div{
+    display: flex;
+    gap: 2em;
+
+}
+.scroll h1{
+    font-size: 5em;
+    color: gray;
+    font-weight: bold;
+    padding-top: 50px;
+
+}
+.righttoleft{
+    animation: righttoleft 10s infinite linear;
+}
+@keyframes righttoleft {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+@media  (max-width: 1158px) {
+    .flux{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+}
+
